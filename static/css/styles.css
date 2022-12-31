@@ -1,0 +1,189 @@
+@media (min-width: 1600px) {
+    .main {
+        width: 1200px;
+    }
+}
+body {
+    background: #e5e6d0 url("/images/bg.jpg") repeat 0 0;
+    font-size: 0.96em;
+    line-height: 1.78;
+}
+.site-brand-container {
+    background: #172a3a;
+}
+::selection {
+    background: #a34d32;
+}
+.site-nav {
+    font-size: 110%;
+}
+.sidebar {
+    font-size: 105%;
+}
+.header-inner {
+    border-radius: 0 0 8px 8px;
+}
+.sidebar-inner {
+    border-radius: 8px;
+}
+.post-block + .post-block {
+    border-radius: 8px;
+}
+.post-block {
+    border-radius: 0 0 8px 8px;
+}
+h1.post-title {
+    background: #ff7f50;
+    background-image: -webkit-linear-gradient(top, #ff7f50, #ff7f50);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.25), inset 0 -1px 0 rgba(0,0,0,0.1);
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.25), 0 -1px 0 rgba(255,255,255,0.1) inset;
+    /* position: fixed */
+    width: 100%;
+    z-index: 1000;
+    border-radius: 16px;
+    /* height: 50px */
+    /* cursor: pointer */
+    /* margin-top: 10px */
+    padding: 8px 0;
+}
+.wiki h1.post-title:after {
+    font-family: "Font Awesome 5 Brands";
+    content: "\f266";
+    display: inline-block;
+    font-weight: 400;
+    font-size: 0.75em;
+    position: relative;
+    vertical-align: super;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 0;
+}
+.wiki h1.post-title {
+    background: #cfcf8c;
+}
+.post-body img {
+    -webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
+}
+.posts-expand .post-meta {
+    margin-bottom: 30px;
+}
+.posts-expand .post-header {
+    margin-bottom: 30px;
+}
+.post-button {
+    margin-top: 0;
+}
+:root {
+    --content-bg-color: #fafaf3;
+    --link-color: #a34d32;
+    --link-hover-color: #5f9ea0;
+    --btn-default-bg: #fafaf3;
+    --btn-default-color: #a34d32;
+    --btn-default-hover-bg: #cfcf8c;
+    --btn-default-hover-color: #508991;
+}
+.btn {
+    border: 0;
+}
+.links-of-recent-posts {
+    font-size: 0.8125em;
+    margin-top: 10px;
+}
+.links-of-recent-posts-title {
+    font-size: 1.03em;
+    font-weight: 600;
+    margin-top: 0;
+}
+.links-of-recent-posts-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.use-motion .post-header,
+.use-motion .post-body {
+    visibility: inherit;
+}
+a.tc-tiddlylink {
+    border: none;
+}
+@media (min-width: 1200px) {
+    .tc-body {
+        width: 960px;
+        margin: 0 auto;
+    }
+}
+.tc-story-river {
+    background: var(--content-bg-color);
+    border-radius: initial;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+    padding: 40px;
+}
+.tc-btn-invisible {
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+button.tc-tag-label,
+span.tc-tag-label {
+    display: inline-block;
+    padding: 0.16em 0.7em;
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 1.2em;
+    color: #fff;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #ec6;
+    border-radius: 1em;
+}
+.tc-subtitle {
+    font-size: 0.9em;
+    color: #c0c0c0;
+    font-weight: 300;
+}
+.tc-titlebar,
+.tc-tiddler-edit-title {
+    overflow: hidden;
+}
+.tc-site-title,
+.tc-titlebar {
+    font-weight: 300;
+    font-size: 2.35em;
+    line-height: 1.2em;
+    margin: 0;
+}
+.tc-titlebar h2 {
+    font-size: 1em;
+    display: inline;
+}
+.tc-table-of-contents ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background: $black-dim url("/images/bg2.png") repeat 0 0;
+    }
+    :root {
+        --content-bg-color: rgba(51,51,51,0.8);
+        --brand-color: $brand-color-dark;
+    }
+    .site-brand-container {
+        background: #5f9ea0;
+    }
+    img {
+        opacity: 0.75;
+    }
+    img:hover {
+        opacity: 0.95;
+    }
+    h1.post-title {
+        color: $black-light;
+    }
+}
